@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity UvSellUnusedVoucher.
+    -->
+    <changeSet id="20180104133605-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="brand_id"
+                                 baseTableName="uv_sell_unused_voucher"
+                                 constraintName="fk_uv_sell_unused_voucher_brand_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="uv_brand"/>
+
+        <addForeignKeyConstraint baseColumnNames="category_id"
+                                 baseTableName="uv_sell_unused_voucher"
+                                 constraintName="fk_uv_sell_unused_voucher_category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="uv_category"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="uv_sell_unused_voucher"
+                                 constraintName="fk_uv_sell_unused_voucher_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="uv_sell_unused_voucher_user"/>
+
+    </changeSet>
+</databaseChangeLog>

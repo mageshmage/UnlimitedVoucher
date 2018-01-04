@@ -1,0 +1,22 @@
+{
+    "unlimitedVoucherApp": {
+        "uvBrand" : {
+            "home": {
+                "title": "Uv Brands",
+                "createLabel": "Uv Brand-ஐ உருவாக்கு",
+                "createOrEditLabel": "Uv Brand -ஐ மாற்று (அ) உருவாக்கு"
+            },
+            "created": "Uv Brand புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Uv Brand மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Uv Brand நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Uv Brand {{ id }}?"
+            },
+            "detail": {
+                "title": "Uv Brand"
+            },
+            "brandName": "Brand Name",
+            "brandCode": "Brand Code"
+        }
+    }
+}
