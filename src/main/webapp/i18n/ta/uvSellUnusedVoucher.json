@@ -1,0 +1,29 @@
+{
+    "unlimitedVoucherApp": {
+        "uvSellUnusedVoucher" : {
+            "home": {
+                "title": "Uv Sell Unused Vouchers",
+                "createLabel": "Uv Sell Unused Voucher-ஐ உருவாக்கு",
+                "createOrEditLabel": "Uv Sell Unused Voucher -ஐ மாற்று (அ) உருவாக்கு"
+            },
+            "created": "Uv Sell Unused Voucher புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Uv Sell Unused Voucher மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Uv Sell Unused Voucher நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Uv Sell Unused Voucher {{ id }}?"
+            },
+            "detail": {
+                "title": "Uv Sell Unused Voucher"
+            },
+            "voucherCode": "Voucher Code",
+            "isValid": "Is Valid",
+            "isExpired": "Is Expired",
+            "createdBy": "Created By",
+            "createdOn": "Created On",
+            "lastUpdatedOn": "Last Updated On",
+            "brand": "Brand",
+            "category": "Category",
+            "user": "User"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "unlimitedVoucherApp": {
+        "uvCategory" : {
+            "home": {
+                "title": "Uv Categories",
+                "createLabel": "Create a new Uv Category",
+                "createOrEditLabel": "Create or edit a Uv Category"
+            },
+            "created": "A new Uv Category is created with identifier {{ param }}",
+            "updated": "A Uv Category is updated with identifier {{ param }}",
+            "deleted": "A Uv Category is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Uv Category {{ id }}?"
+            },
+            "detail": {
+                "title": "Uv Category"
+            },
+            "categoryName": "Category Name",
+            "categoryCode": "Category Code",
+            "isEnabled": "Is Enabled",
+            "createdOn": "Created On",
+            "lastUpdatedOn": "Last Updated On"
+        }
+    }
+}

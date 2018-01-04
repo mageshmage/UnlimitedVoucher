@@ -1,0 +1,28 @@
+{
+    "unlimitedVoucherApp": {
+        "uvFreeVoucher" : {
+            "home": {
+                "title": "Uv Free Vouchers",
+                "createLabel": "Uv Free Voucher-ஐ உருவாக்கு",
+                "createOrEditLabel": "Uv Free Voucher -ஐ மாற்று (அ) உருவாக்கு"
+            },
+            "created": "Uv Free Voucher புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Uv Free Voucher மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Uv Free Voucher நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Uv Free Voucher {{ id }}?"
+            },
+            "detail": {
+                "title": "Uv Free Voucher"
+            },
+            "voucherCode": "Voucher Code",
+            "isValid": "Is Valid",
+            "isExpired": "Is Expired",
+            "createdBy": "Created By",
+            "createdOn": "Created On",
+            "lastUpdatedOn": "Last Updated On",
+            "brand": "Brand",
+            "category": "Category"
+        }
+    }
+}

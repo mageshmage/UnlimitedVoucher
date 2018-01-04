@@ -1,0 +1,55 @@
+
+<div>
+    <h2><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.detail.title">Uv Sell Unused Voucher</span> {{vm.uvSellUnusedVoucher.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.voucherCode">Voucher Code</span></dt>
+        <dd>
+            <span>{{vm.uvSellUnusedVoucher.voucherCode}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.isValid">Is Valid</span></dt>
+        <dd>
+            <span>{{vm.uvSellUnusedVoucher.isValid}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.isExpired">Is Expired</span></dt>
+        <dd>
+            <span>{{vm.uvSellUnusedVoucher.isExpired}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.createdBy">Created By</span></dt>
+        <dd>
+            <span>{{vm.uvSellUnusedVoucher.createdBy}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.createdOn">Created On</span></dt>
+        <dd>
+            <span>{{vm.uvSellUnusedVoucher.createdOn | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.lastUpdatedOn">Last Updated On</span></dt>
+        <dd>
+            <span>{{vm.uvSellUnusedVoucher.lastUpdatedOn | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.brand">Brand</span></dt>
+        <dd>
+            <a ui-sref="uv-brand-my-suffix-detail({id:vm.uvSellUnusedVoucher.brandId})">{{vm.uvSellUnusedVoucher.brandId}}</a>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.category">Category</span></dt>
+        <dd>
+            <a ui-sref="uv-category-my-suffix-detail({id:vm.uvSellUnusedVoucher.categoryId})">{{vm.uvSellUnusedVoucher.categoryId}}</a>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.user">User</span></dt>
+        <dd>
+            <a ui-sref="uv-sell-unused-voucher-user-my-suffix-detail({id:vm.uvSellUnusedVoucher.userId})">{{vm.uvSellUnusedVoucher.userId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="uv-sell-unused-voucher-my-suffix-detail.edit({id:vm.uvSellUnusedVoucher.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

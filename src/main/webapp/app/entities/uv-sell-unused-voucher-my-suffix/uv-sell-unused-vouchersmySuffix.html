@@ -1,0 +1,82 @@
+<div>
+    <h2 data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.home.title">Uv Sell Unused Vouchers</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="uv-sell-unused-voucher-my-suffix.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.home.createLabel">
+                        Create new Uv Sell Unused Voucher
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="voucherCode"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.voucherCode">Voucher Code</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="isValid"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.isValid">Is Valid</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="isExpired"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.isExpired">Is Expired</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="createdBy"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.createdBy">Created By</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="createdOn"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.createdOn">Created On</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="lastUpdatedOn"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.lastUpdatedOn">Last Updated On</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="brandId"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.brand">Brand</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="categoryId"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.category">Category</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="userId"><span data-translate="unlimitedVoucherApp.uvSellUnusedVoucher.user">User</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="uvSellUnusedVoucher in vm.uvSellUnusedVouchers track by uvSellUnusedVoucher.id">
+                    <td><a ui-sref="uv-sell-unused-voucher-my-suffix-detail({id:uvSellUnusedVoucher.id})">{{uvSellUnusedVoucher.id}}</a></td>
+                    <td>{{uvSellUnusedVoucher.voucherCode}}</td>
+                    <td>{{uvSellUnusedVoucher.isValid}}</td>
+                    <td>{{uvSellUnusedVoucher.isExpired}}</td>
+                    <td>{{uvSellUnusedVoucher.createdBy}}</td>
+                        <td>{{uvSellUnusedVoucher.createdOn | date:'mediumDate'}}</td>
+                        <td>{{uvSellUnusedVoucher.lastUpdatedOn | date:'mediumDate'}}</td>
+                    <td>
+                        <a ui-sref="uv-brand-my-suffix-detail({id:uvSellUnusedVoucher.brandId})">{{uvSellUnusedVoucher.brandId}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="uv-category-my-suffix-detail({id:uvSellUnusedVoucher.categoryId})">{{uvSellUnusedVoucher.categoryId}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="uv-sell-unused-voucher-user-my-suffix-detail({id:uvSellUnusedVoucher.userId})">{{uvSellUnusedVoucher.userId}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="uv-sell-unused-voucher-my-suffix-detail({id:uvSellUnusedVoucher.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="uv-sell-unused-voucher-my-suffix.edit({id:uvSellUnusedVoucher.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="uv-sell-unused-voucher-my-suffix.delete({id:uvSellUnusedVoucher.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <jhi-item-count page="vm.page" total="vm.queryCount" items-per-page="vm.itemsPerPage"></jhi-item-count>
+        <uib-pagination class="pagination-sm" total-items="vm.totalItems" items-per-page="vm.itemsPerPage" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
+    </div>
+</div>

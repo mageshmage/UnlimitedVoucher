@@ -1,0 +1,73 @@
+
+entity UvCategory {
+	categoryName String,
+    categoryCode String,
+    isEnabled Boolean,
+    createdOn LocalDate,
+    lastUpdatedOn LocalDate
+}
+
+entity UvBrand {
+	brandName String,
+    brandCode String
+}
+
+entity UvFreeVoucher {
+	voucherCode String,
+    isValid Boolean,
+    isExpired Boolean,
+    createdBy Boolean,
+    createdOn LocalDate,
+    lastUpdatedOn LocalDate
+}
+
+entity UvSellUnusedVoucherUser {
+	userName String,
+    password String,
+    email String,
+    isVerifiedUser Boolean
+}
+
+entity UvSellUnusedVoucher {
+	voucherCode String,
+    isValid Boolean,
+    isExpired Boolean,
+    createdBy String,
+    createdOn LocalDate,
+    lastUpdatedOn LocalDate
+}
+
+relationship ManyToOne {
+	UvSellUnusedVoucher{brand} to UvBrand
+}
+
+relationship ManyToOne {
+	UvSellUnusedVoucher{category} to UvCategory
+}
+
+relationship ManyToOne {
+	UvFreeVoucher{brand} to UvBrand
+}
+
+relationship ManyToOne {
+	UvFreeVoucher{category} to UvCategory
+}
+
+relationship ManyToOne {
+	UvSellUnusedVoucher{user} to UvSellUnusedVoucherUser
+}
+
+paginate UvSellUnusedVoucher with pagination
+
+paginate UvFreeVoucher with pagination
+
+service all with serviceImpl
+
+dto * with mapstruct
+
+// Set an angular suffix
+angularSuffix * with mySuffix
+
+
+
+

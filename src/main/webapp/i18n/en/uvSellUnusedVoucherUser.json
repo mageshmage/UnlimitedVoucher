@@ -1,0 +1,24 @@
+{
+    "unlimitedVoucherApp": {
+        "uvSellUnusedVoucherUser" : {
+            "home": {
+                "title": "Uv Sell Unused Voucher Users",
+                "createLabel": "Create a new Uv Sell Unused Voucher User",
+                "createOrEditLabel": "Create or edit a Uv Sell Unused Voucher User"
+            },
+            "created": "A new Uv Sell Unused Voucher User is created with identifier {{ param }}",
+            "updated": "A Uv Sell Unused Voucher User is updated with identifier {{ param }}",
+            "deleted": "A Uv Sell Unused Voucher User is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Uv Sell Unused Voucher User {{ id }}?"
+            },
+            "detail": {
+                "title": "Uv Sell Unused Voucher User"
+            },
+            "userName": "User Name",
+            "password": "Password",
+            "email": "Email",
+            "isVerifiedUser": "Is Verified User"
+        }
+    }
+}

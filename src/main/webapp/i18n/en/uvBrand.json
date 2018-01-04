@@ -1,0 +1,22 @@
+{
+    "unlimitedVoucherApp": {
+        "uvBrand" : {
+            "home": {
+                "title": "Uv Brands",
+                "createLabel": "Create a new Uv Brand",
+                "createOrEditLabel": "Create or edit a Uv Brand"
+            },
+            "created": "A new Uv Brand is created with identifier {{ param }}",
+            "updated": "A Uv Brand is updated with identifier {{ param }}",
+            "deleted": "A Uv Brand is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Uv Brand {{ id }}?"
+            },
+            "detail": {
+                "title": "Uv Brand"
+            },
+            "brandName": "Brand Name",
+            "brandCode": "Brand Code"
+        }
+    }
+}
