@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitHubOrganization": "mageshmage",
+    "baseName": "UnlimitedVoucher",
+    "packageName": "com.uv.app",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "useSass": false,
+    "clientPackageManager": "yarn",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "ta",
+      "en"
+    ],
+    "clientFramework": "angular1",
+    "jhipsterVersion": "4.13.1",
+    "packageFolder": "com/uv/app",
+    "jwtSecretKey": "002716b352173b0042bc21bafca8774ac375c3c2",
+    "jhiPrefix": "jhi"
+  }
+}
