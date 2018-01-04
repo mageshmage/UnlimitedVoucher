@@ -1,0 +1,51 @@
+
+<div>
+    <h2><span data-translate="unlimitedVoucherApp.uvFreeVoucher.detail.title">Uv Free Voucher</span> {{vm.uvFreeVoucher.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="unlimitedVoucherApp.uvFreeVoucher.voucherCode">Voucher Code</span></dt>
+        <dd>
+            <span>{{vm.uvFreeVoucher.voucherCode}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvFreeVoucher.isValid">Is Valid</span></dt>
+        <dd>
+            <span>{{vm.uvFreeVoucher.isValid}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvFreeVoucher.isExpired">Is Expired</span></dt>
+        <dd>
+            <span>{{vm.uvFreeVoucher.isExpired}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvFreeVoucher.createdBy">Created By</span></dt>
+        <dd>
+            <span>{{vm.uvFreeVoucher.createdBy}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvFreeVoucher.createdOn">Created On</span></dt>
+        <dd>
+            <span>{{vm.uvFreeVoucher.createdOn | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvFreeVoucher.lastUpdatedOn">Last Updated On</span></dt>
+        <dd>
+            <span>{{vm.uvFreeVoucher.lastUpdatedOn | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvFreeVoucher.brand">Brand</span></dt>
+        <dd>
+            <a ui-sref="uv-brand-my-suffix-detail({id:vm.uvFreeVoucher.brandId})">{{vm.uvFreeVoucher.brandId}}</a>
+        </dd>
+        <dt><span data-translate="unlimitedVoucherApp.uvFreeVoucher.category">Category</span></dt>
+        <dd>
+            <a ui-sref="uv-category-my-suffix-detail({id:vm.uvFreeVoucher.categoryId})">{{vm.uvFreeVoucher.categoryId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="uv-free-voucher-my-suffix-detail.edit({id:vm.uvFreeVoucher.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

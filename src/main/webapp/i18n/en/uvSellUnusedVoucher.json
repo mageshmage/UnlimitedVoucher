@@ -1,0 +1,29 @@
+{
+    "unlimitedVoucherApp": {
+        "uvSellUnusedVoucher" : {
+            "home": {
+                "title": "Uv Sell Unused Vouchers",
+                "createLabel": "Create a new Uv Sell Unused Voucher",
+                "createOrEditLabel": "Create or edit a Uv Sell Unused Voucher"
+            },
+            "created": "A new Uv Sell Unused Voucher is created with identifier {{ param }}",
+            "updated": "A Uv Sell Unused Voucher is updated with identifier {{ param }}",
+            "deleted": "A Uv Sell Unused Voucher is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Uv Sell Unused Voucher {{ id }}?"
+            },
+            "detail": {
+                "title": "Uv Sell Unused Voucher"
+            },
+            "voucherCode": "Voucher Code",
+            "isValid": "Is Valid",
+            "isExpired": "Is Expired",
+            "createdBy": "Created By",
+            "createdOn": "Created On",
+            "lastUpdatedOn": "Last Updated On",
+            "brand": "Brand",
+            "category": "Category",
+            "user": "User"
+        }
+    }
+}

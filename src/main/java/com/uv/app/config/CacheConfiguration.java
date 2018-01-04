@@ -43,6 +43,11 @@ public class CacheConfiguration {
             cm.createCache(com.uv.app.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.uv.app.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.uv.app.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(com.uv.app.domain.UvCategory.class.getName(), jcacheConfiguration);
+            cm.createCache(com.uv.app.domain.UvBrand.class.getName(), jcacheConfiguration);
+            cm.createCache(com.uv.app.domain.UvFreeVoucher.class.getName(), jcacheConfiguration);
+            cm.createCache(com.uv.app.domain.UvSellUnusedVoucherUser.class.getName(), jcacheConfiguration);
+            cm.createCache(com.uv.app.domain.UvSellUnusedVoucher.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

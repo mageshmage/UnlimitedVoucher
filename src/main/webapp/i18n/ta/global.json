@@ -7,6 +7,11 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "பொருள்கள்",
+                "uvCategoryMySuffix": "Uv Category",
+                "uvBrandMySuffix": "Uv Brand",
+                "uvFreeVoucherMySuffix": "Uv Free Voucher",
+                "uvSellUnusedVoucherUserMySuffix": "Uv Sell Unused Voucher User",
+                "uvSellUnusedVoucherMySuffix": "Uv Sell Unused Voucher",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

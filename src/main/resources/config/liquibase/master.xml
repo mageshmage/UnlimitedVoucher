@@ -5,6 +5,13 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180104133601_added_entity_UvCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180104133602_added_entity_UvBrand.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180104133603_added_entity_UvFreeVoucher.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180104133604_added_entity_UvSellUnusedVoucherUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180104133605_added_entity_UvSellUnusedVoucher.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180104133603_added_entity_constraints_UvFreeVoucher.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180104133605_added_entity_constraints_UvSellUnusedVoucher.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
